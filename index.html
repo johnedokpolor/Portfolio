@@ -536,10 +536,10 @@
     <!-- Navigation -->
     <nav>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a class="internal-link" href="#home">Home</a></li>
+        <li><a class="internal-link" href="#about">About</a></li>
+        <li><a class="internal-link" href="#projects">Projects</a></li>
+        <li><a class="internal-link" href="#contact">Contact</a></li>
       </ul>
     </nav>
 
@@ -548,7 +548,7 @@
       <div class="hero-content">
         <h1>John Edokpolor</h1>
         <p>Frontend Developer</p>
-        <a href="#projects" class="cta-button">View My Work</a>
+        <a href="#projects" class="cta-button internal-link">View My Work</a>
       </div>
     </section>
 
@@ -966,7 +966,7 @@
       }
 
       // Smooth scrolling for navigation links
-      document.querySelectorAll("nav a").forEach((anchor) => {
+      document.querySelectorAll(" .internal-link").forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
           e.preventDefault();
           const target = document.querySelector(this.getAttribute("href"));
